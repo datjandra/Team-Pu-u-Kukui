@@ -35,5 +35,13 @@ def main():
     
     m.to_streamlit(height=500)
 
+#-------------------------
+#Test tiger
+# Initialize connection.
+conn = st.connection('mysql', type='sql')
+st.write ("Connection to mysql")
+
+#------------------
+
 if __name__ == "__main__":
     main()
