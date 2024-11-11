@@ -332,9 +332,9 @@ def show_open_data_card(col):
         df = fetch_campaign_fund_data()
         
         # Create a horizontal bar chart
-        fig = px.bar(df, x="Aggregated Amount", y="Name", orientation='h',
-                     title="Top 3 Campaign Contributions",
-                     labels={"Aggregated Amount": "Amount ($)", "Name": "Contributor Name"})
+        fig = px.bar(df, x="Amount", y="Name", orientation='h',
+                     title="Top 5 Campaign Fundraising Candidates",
+                     labels={"CampaignTotal": "Amount ($)", "Name": "ContributorName"})
 
         # Customize layout for better readability with long names
         fig.update_layout(yaxis_tickangle=0, margin=dict(l=200, r=20, t=50, b=20))
