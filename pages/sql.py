@@ -18,5 +18,5 @@ st.write(df)
 df = conn.query('select * from readiness_by_dimensions', ttl=6)
 st.write(df)
 
-df = conn.query('select * from campaign_fund limit 5', ttl=6)
+df = conn.query('select * from Campaign_fund limit 5', ttl=6)
 st.write(df)
