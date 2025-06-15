@@ -34,7 +34,7 @@ def monthly_overview(total_data):
   ax.bar(total_data['Date'], total_data['Budgeted'], label='Budgeted', alpha=0.6)
   ax.bar(total_data['Date'], total_data['Used'], label='Used')
   ax.set_ylabel("Amount ($)")
-  ax.set_title("Total Budget vs Used")
+  ax.set_title("Total Budget vs Used Amount")
   ax.legend()
   st.pyplot(fig)
 
