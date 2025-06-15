@@ -33,7 +33,7 @@ def monthly_overview(total_data):
   fig, ax = plt.subplots()
   ax.bar(total_data['Date'], total_data['Budgeted'], label='Budgeted', alpha=0.6)
   ax.bar(total_data['Date'], total_data['Used'], label='Used')
-  ax.set_ylabel("Amount ($)")
+  ax.set_ylabel("Amount $")
   ax.set_title("Total Budget vs Used Amount")
   ax.legend()
   st.pyplot(fig)
@@ -49,7 +49,7 @@ def category_breakdown(category_data):
 def main():
   apply_custom_style()
   
-  st.header("Budget Data Visualization")
+  st.header("The Budget Data Visualization")
 
   category_data, total_data = fetch_budget_data()
   metrics_view(total_data)
