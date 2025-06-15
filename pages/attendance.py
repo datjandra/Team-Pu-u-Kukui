@@ -44,8 +44,8 @@ def main():
   fig, ax = plt.subplots()
   sns.regplot(x=df_total[x_axis], y=df_total[y_axis], ax=ax, scatter_kws={"s": 40})
   ax.set_title(f"{y_axis.replace('_', ' ')} vs {x_axis.replace('_', ' ')}")
-  ax.set_xlabel(x_axis.replace('_', ' ') + ' Users'))
-  ax.set_ylabel(y_axis.replace('_', ' ')+  ' Budget'))
+  ax.set_xlabel(x_axis.replace('_', ' ') ))
+  ax.set_ylabel(y_axis.replace('_', ' '))
   st.pyplot(fig)
 
 if __name__ == "__main__":
