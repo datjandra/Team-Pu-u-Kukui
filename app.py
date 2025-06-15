@@ -599,9 +599,9 @@ def show_attendance_card(col):
             ax=ax,
             scatter_kws={"s": 40}
         )
-        ax.set_title("Total vs Registered")
-        ax.set_xlabel("Registered")
-        ax.set_ylabel("Total")
+        ax.set_title("Total Budget vs Registered User Count")
+        ax.set_xlabel("Registered Users")
+        ax.set_ylabel("Total Budget")
         st.pyplot(fig)
 
         # Add the footer with "Read more about it" and a button
