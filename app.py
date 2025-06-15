@@ -585,7 +585,7 @@ def show_attendance_card(col):
         # Display the custom styles in Streamlit
         st.markdown(header_style, unsafe_allow_html=True)
         # Create a card layout with a blue header
-        create_card_header("Attendance", "https://raw.githubusercontent.com/datjandra/Team-Pu-u-Kukui/refs/heads/main/images/user-line.png")
+        create_card_header("HSPLS Digital Literacy Classes Attendance", "https://raw.githubusercontent.com/datjandra/Team-Pu-u-Kukui/refs/heads/main/images/user-line.png")
 
         df_total = fetch_attendance_data()
 
@@ -599,9 +599,9 @@ def show_attendance_card(col):
             ax=ax,
             scatter_kws={"s": 40}
         )
-        ax.set_title("Total Budget vs Registered User Count")
+        ax.set_title("Total Expense vs Registered User Count")
         ax.set_xlabel("Registered Users")
-        ax.set_ylabel("Total Budget")
+        ax.set_ylabel("Total Expense")
         st.pyplot(fig)
 
         # Add the footer with "Read more about it" and a button
