@@ -546,7 +546,7 @@ def show_survey_results_card(col):
     header_style = get_header_style()
     with col:
         st.markdown(header_style, unsafe_allow_html=True)
-        create_card_header("Survey Results (Digital Literacy Classes)", "https://raw.githubusercontent.com/datjandra/Team-Pu-u-Kukui/refs/heads/main/images/book.png")
+        create_card_header("HSPLS Digital Literacy Classes Survey Results", "https://raw.githubusercontent.com/datjandra/Team-Pu-u-Kukui/refs/heads/main/images/book.png")
 
         df3 = pd.read_excel("data/SurveyClass3.xlsx", engine="openpyxl")
         df4 = pd.read_excel("data/SurveyClass4.xlsx", engine="openpyxl")
