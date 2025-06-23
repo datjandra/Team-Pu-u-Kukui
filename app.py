@@ -184,7 +184,7 @@ def show_device_access_card(col):
         # Display the custom styles in Streamlit
         st.markdown(header_style, unsafe_allow_html=True)
         
-        create_card_header("Device Access", "https://raw.githubusercontent.com/datjandra/Team-Pu-u-Kukui/refs/heads/main/images/monitor-mobbile.png")
+        create_card_header(" Hawaii State Computer and Internet Access", "https://raw.githubusercontent.com/datjandra/Team-Pu-u-Kukui/refs/heads/main/images/monitor-mobbile.png")
 
         df = fetch_usage_data()
             
@@ -601,7 +601,7 @@ def show_attendance_card(col):
         )
         ax.set_title("Total Expense vs Registered User Count")
         ax.set_xlabel("Registered Users")
-        ax.set_ylabel("Total Expense")
+        ax.set_ylabel("Total Expense $")
         st.pyplot(fig)
 
         # Add the footer with "Read more about it" and a button
