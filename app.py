@@ -245,7 +245,7 @@ def show_broadband_card(col):
         # Create a card layout with a blue header
         create_card_header("Broadband Connectivity", "https://raw.githubusercontent.com/datjandra/Team-Pu-u-Kukui/refs/heads/main/images/cloud-connection.png")
         
-        st.subheader("Broadband Connectivity Map")
+        st.subheader("Hawaii Broadband Connectivity Coverage Map")
         
         # Create a Leaflet map centered at an example location
         # Drop rows where coordinates couldn't be found
