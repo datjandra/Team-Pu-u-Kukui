@@ -299,7 +299,7 @@ def show_digital_literacy_card(col):
         st.markdown(header_style, unsafe_allow_html=True)
         
         # Create a card layout with a blue header
-        create_card_header("Digital Literacy", "https://raw.githubusercontent.com/datjandra/Team-Pu-u-Kukui/refs/heads/main/images/book.png")
+        create_card_header("Hawaii Digital Readiness Level", "https://raw.githubusercontent.com/datjandra/Team-Pu-u-Kukui/refs/heads/main/images/book.png")
 
         df = fetch_readiness_data()
         # Select the first row where Dimension is 'Overall' and specific columns
