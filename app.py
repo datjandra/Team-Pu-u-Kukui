@@ -631,8 +631,7 @@ def main():
     
     st.markdown(
         """
-        Welcome to Hawaii's Digital Equity Dashboard, where we track technology and internet access across our islands. 
-        This tool maps the digital divide in our communities, showing where support is needed most.
+        Welcome to Hawaiʻi's Digital Equity Dashboard, where we track technology and internet access across our islands. This tool maps the digital divide in our communities, showing where support is needed most..
         """
     )
 
