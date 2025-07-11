@@ -176,11 +176,11 @@ def show_digital_equity_card(tab):
             </div>
         """, unsafe_allow_html=True)
 
-def show_device_access_card(col):
+def show_device_access_card(tab):
     # Set up a blue header style for the card
     header_style = get_header_style()
     
-    with col:
+    with tab:
         # Display the custom styles in Streamlit
         st.markdown(header_style, unsafe_allow_html=True)
         
@@ -392,7 +392,7 @@ def show_open_data_card(tab):
             </div>
         """, unsafe_allow_html=True)
 
-def show_user_feedback_card(col):
+def show_user_feedback_card(tab):
     # Set up a blue header style for the card
     header_style = get_header_style()
 
@@ -401,7 +401,7 @@ def show_user_feedback_card(col):
     except Exception as e:
         return  # Exit the function early, don't render the card
 
-    with col:
+    with tab:
         # Display the custom styles in Streamlit
         st.markdown(header_style, unsafe_allow_html=True)
         create_card_header("User Feedback")
@@ -646,7 +646,7 @@ def main():
         """
     )
 
-    tab1, tab2, tab3 = st.tabs(["HSPLS Overview", "Broadband Equity", "Digital Transparency"])
+    tab1, tab2, tab3, tab4 = st.tabs(["HSPLS Overview", "Broadband Equity", "Digital Transparency", "Accessibility"])
     
     show_attendance_card(tab1)
     show_survey_results_card(tab1)
@@ -659,6 +659,9 @@ def main():
     show_telecom_filings_table(tab3)
     show_open_data_card(tab3)
     show_income_distribution_card(tab3)
+
+    show_device_access_card(tab4)
+    show_user_feedback_card(tab4)
 
 if __name__ == "__main__":
     main()
